@@ -22,4 +22,6 @@ const [numberState] = useState(numbers);
   );
 };
 
-export default Numbers;
+
+
+// this is the parent. (we dont need to export default the parent, just export the function)
