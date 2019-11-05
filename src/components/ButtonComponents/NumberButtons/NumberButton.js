@@ -1,8 +1,12 @@
 import React from "react";
+import "./style.css";
 
 const NumberButton = (props) => {
   return (
-    <button className="number_buttons">
+    <button className="numberbtns"
+    onClick={() => props.setDisplayValue(props.number)}
+    
+    >
       {props.number}
     </button>
   );

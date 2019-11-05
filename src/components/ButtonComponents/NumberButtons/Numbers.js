@@ -11,7 +11,11 @@ const [numberState] = useState(numbers);
 {
   numberState.map((number, index) => 
   
-  (<NumberButton key={index} number={number}/>)
+  (<NumberButton 
+    key={index} 
+    number={number}
+    setDisplayValue={props.setDisplayValue}
+    />)
   )
 }
     </div>
