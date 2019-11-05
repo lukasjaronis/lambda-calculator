@@ -4,14 +4,15 @@ import NumberButton from "./NumberButton";
 
 
 
-const Numbers = props => {
+export const Numbers = props => {
 const [numberState] = useState(numbers);
   return (
     <div>
 {
-  numberState.map((number, index) => (
-    <NumberButton key={index} number={number}/>
-  ))
+  numberState.map((number, index) => 
+  
+  (<NumberButton key={index} number={number}/>)
+  )
 }
     </div>
   );
